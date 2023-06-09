@@ -1,0 +1,56 @@
+$bg:rgb(16,16,16);
+.banner{
+    height: 400px;
+    background-color:$bg ;    
+}
+
+
+.row{
+    padding: 1rem;
+    background-color:$bg ;    
+    >h2{
+        margin:0.3rem;
+        font-weight: 400;
+    }
+    >div{
+        display: flex;
+        overflow-x: auto;
+   } 
+}
+
+.card{
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 0.3rem;
+    &:hover{
+        transform: translateY(-10px) ;
+    }
+}
+
+a,h2{
+    color: white;
+}
+
+.genreBox{
+    overflow-x: auto;
+    display: flex;
+    height: 100px;
+    background-color:$bg;
+    flex: 0%;
+    >a{
+        color: black;
+        background-color: white;
+        padding: 1rem 0;
+        margin: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        min-width: 10rem;
+        transition: all 0.5s;
+        &:hover{
+            background-color: rgb(236, 236, 236);
+        }
+    }
+
+    
+}
